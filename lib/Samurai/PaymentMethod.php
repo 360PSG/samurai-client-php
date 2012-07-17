@@ -190,6 +190,7 @@ class Samurai_PaymentMethod
 
     foreach ($response as $key => $value) {
       if ($key === 'messages' && is_array($value)) {
+      	if (isset($value['key'])) { $value = array( $value ); }
         $messages = array_merge($messages, $value);
       } elseif (is_array($value)) {
         $res = self::extractMessagesFromResponse($value);
