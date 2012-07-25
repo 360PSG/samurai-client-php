@@ -2,7 +2,7 @@
 
 abstract class Samurai 
 {
-  const VERSION = '0.2.5';
+  const VERSION = '0.2.6';
 
   public static $merchantKey;
   public static $merchantPassword;
